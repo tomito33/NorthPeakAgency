@@ -1,0 +1,518 @@
+cat > /home/claude/digital-solution/index.html << 'HTMLEOF'
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Solution | Agencia Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="pre-inner">
+            <svg class="pre-logo-svg" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="32" class="pre-logo-text">DS</text>
+            </svg>
+            <div class="pre-bar-wrap"><div class="pre-bar"></div></div>
+            <span class="pre-pct">0%</span>
+        </div>
+    </div>
+
+
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#inicio" class="nav-logo">Digital<span>Solution</span></a>
+            <ul class="nav-links">
+                <li><a href="#quienes-somos" data-i18n="nav_about">Quiénes Somos</a></li>
+                <li><a href="#servicios" data-i18n="nav_services">Servicios</a></li>
+                <li><a href="#proceso" data-i18n="nav_process">Proceso</a></li>
+                <li><a href="#trabajos" data-i18n="nav_works">Trabajos</a></li>
+                <li><a href="#testimonios" data-i18n="nav_testimonials">Testimonios</a></li>
+                <li><a href="#contacto" class="nav-cta" data-i18n="nav_contact">Contacto</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="es">ES</button>
+                    <span>/</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#quienes-somos" data-i18n="nav_about">Quiénes Somos</a></li>
+            <li><a href="#servicios" data-i18n="nav_services">Servicios</a></li>
+            <li><a href="#proceso" data-i18n="nav_process">Proceso</a></li>
+            <li><a href="#trabajos" data-i18n="nav_works">Trabajos</a></li>
+            <li><a href="#testimonios" data-i18n="nav_testimonials">Testimonios</a></li>
+            <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
+        </ul>
+        <div class="mobile-lang">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <span>/</span>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <!-- WHATSAPP BTN -->
+    <a href="https://api.whatsapp.com/send?phone=TUDIGITOAQUI&text=Hola%20Quiero%20hacer%20una%20consulta%3A%20" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- HERO -->
+    <header id="inicio">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-noise"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up" data-delay="0">
+                <span class="badge-dot"></span>
+                <span data-i18n="hero_badge">Agencia Digital Premium</span>
+            </div>
+            <h1 class="hero-title reveal-up" data-delay="1">
+                <span class="line" data-i18n="hero_title1">Transformamos marcas</span>
+                <span class="line accent" data-i18n="hero_title2">en experiencias digitales</span>
+            </h1>
+            <p class="hero-sub reveal-up" data-delay="2" data-i18n="hero_sub">Estrategia, diseño y tecnología al servicio de tu crecimiento. Construimos presencias digitales que convierten visitantes en clientes.</p>
+            <div class="hero-btns reveal-up" data-delay="3">
+                <a href="#servicios" class="btn-primary" data-i18n="hero_btn1">Ver Servicios</a>
+                <a href="#trabajos" class="btn-ghost" data-i18n="hero_btn2">Nuestro Trabajo</a>
+            </div>
+            <div class="hero-stats reveal-up" data-delay="4">
+                <div class="hstat"><strong>+150</strong><span data-i18n="hstat1">Proyectos</span></div>
+                <div class="hstat-div"></div>
+                <div class="hstat"><strong>+5</strong><span data-i18n="hstat2">Años</span></div>
+                <div class="hstat-div"></div>
+                <div class="hstat"><strong>+300</strong><span data-i18n="hstat3">Clientes</span></div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-line"></div>
+            <span data-i18n="scroll">Scroll</span>
+        </div>
+    </header>
+
+    <!-- QUIENES SOMOS -->
+    <section id="quienes-somos" class="seccion">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <p class="eyebrow" data-i18n="about_eyebrow">Sobre nosotros</p>
+                    <h2 data-i18n="about_title">No somos una agencia más. Somos tu equipo de crecimiento.</h2>
+                    <p data-i18n="about_p1">En Digital Solution fusionamos estrategia de negocio, diseño de vanguardia y tecnología de punta. Cada proyecto que tomamos es tratado como si fuera nuestro propio negocio.</p>
+                    <p data-i18n="about_p2">Trabajamos con marcas en España, Estados Unidos, Suiza y Latinoamérica que quieren destacar en un mercado cada vez más competitivo.</p>
+                    <a href="#contacto" class="btn-primary mt-btn" data-i18n="about_cta">Trabajemos juntos</a>
+                </div>
+                <div class="about-visual reveal-right">
+                    <div class="av-card av-card-1">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <div>
+                            <strong data-i18n="av1_title">ROI Promedio</strong>
+                            <span>+340%</span>
+                        </div>
+                    </div>
+                    <div class="av-card av-card-2">
+                        <i class="fa-solid fa-globe"></i>
+                        <div>
+                            <strong data-i18n="av2_title">Mercados</strong>
+                            <span>4 países</span>
+                        </div>
+                    </div>
+                    <div class="av-card av-card-3">
+                        <i class="fa-solid fa-trophy"></i>
+                        <div>
+                            <strong data-i18n="av3_title">Satisfacción</strong>
+                            <span>98%</span>
+                        </div>
+                    </div>
+                    <div class="av-glow"></div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80" alt="Equipo Digital Solution" class="av-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="seccion bg-alt">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="eyebrow" data-i18n="services_eyebrow">Lo que hacemos</p>
+                <h2 data-i18n="services_title">Servicios diseñados para escalar tu negocio</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-up" data-delay="0">
+                    <div class="sc-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3 data-i18n="s1_title">Desarrollo Web</h3>
+                    <p data-i18n="s1_p">Sites ultrarrápidos, apps y e-commerces construidos con las tecnologías más modernas. Performance y conversión en el centro de cada decisión.</p>
+                    <ul class="sc-tags">
+                        <li>React / Next.js</li><li>E-commerce</li><li>Web Apps</li>
+                    </ul>
+                    <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="service-card reveal-up" data-delay="1">
+                    <div class="sc-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h3 data-i18n="s2_title">Marketing Digital</h3>
+                    <p data-i18n="s2_p">Estrategias de paid media, SEO, email marketing y contenido viral que llevan tu marca a la cima de tu sector.</p>
+                    <ul class="sc-tags">
+                        <li>Google Ads</li><li>Meta Ads</li><li>SEO</li>
+                    </ul>
+                    <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="service-card reveal-up" data-delay="2">
+                    <div class="sc-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3 data-i18n="s3_title">Branding & Diseño</h3>
+                    <p data-i18n="s3_p">Identidad visual completa, sistemas de diseño y creatividades que hacen que tu marca sea inconfundible en cualquier plataforma.</p>
+                    <ul class="sc-tags">
+                        <li>Brand Identity</li><li>UI/UX</li><li>Motion</li>
+                    </ul>
+                    <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="service-card reveal-up" data-delay="3">
+                    <div class="sc-icon"><i class="fa-solid fa-chart-bar"></i></div>
+                    <h3 data-i18n="s4_title">Analytics & CRO</h3>
+                    <p data-i18n="s4_p">Medimos cada punto de contacto, optimizamos funnels y tomamos decisiones basadas en datos para maximizar tu retorno.</p>
+                    <ul class="sc-tags">
+                        <li>GA4</li><li>Hotjar</li><li>A/B Testing</li>
+                    </ul>
+                    <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="service-card reveal-up" data-delay="4">
+                    <div class="sc-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3 data-i18n="s5_title">Social Media</h3>
+                    <p data-i18n="s5_p">Gestión editorial, contenido nativo y community management para que tu marca esté donde están tus clientes.</p>
+                    <ul class="sc-tags">
+                        <li>Instagram</li><li>LinkedIn</li><li>TikTok</li>
+                    </ul>
+                    <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="service-card service-cta reveal-up" data-delay="5">
+                    <p class="eyebrow" data-i18n="s6_eyebrow">¿No ves lo que buscas?</p>
+                    <h3 data-i18n="s6_title">Soluciones a medida para tu negocio</h3>
+                    <a href="#contacto" class="btn-primary" data-i18n="s6_btn">Hablemos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso" class="seccion">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="eyebrow" data-i18n="process_eyebrow">Cómo trabajamos</p>
+                <h2 data-i18n="process_title">Un proceso diseñado para resultados, no excusas</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step reveal-left" data-delay="0">
+                    <div class="ps-num">01</div>
+                    <div class="ps-content">
+                        <h3 data-i18n="p1_title">Diagnóstico</h3>
+                        <p data-i18n="p1_p">Analizamos tu negocio, competencia y mercado para entender exactamente dónde están las oportunidades de crecimiento.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal-left" data-delay="1">
+                    <div class="ps-num">02</div>
+                    <div class="ps-content">
+                        <h3 data-i18n="p2_title">Estrategia</h3>
+                        <p data-i18n="p2_p">Diseñamos un plan de acción personalizado con KPIs claros, plazos reales y recursos optimizados para tu presupuesto.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal-left" data-delay="2">
+                    <div class="ps-num">03</div>
+                    <div class="ps-content">
+                        <h3 data-i18n="p3_title">Ejecución</h3>
+                        <p data-i18n="p3_p">Nuestro equipo ejecuta con velocidad y precisión. Cada entrega pasa por control de calidad antes de llegar a tus manos.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal-left" data-delay="3">
+                    <div class="ps-num">04</div>
+                    <div class="ps-content">
+                        <h3 data-i18n="p4_title">Optimización</h3>
+                        <p data-i18n="p4_p">Medimos, aprendemos y mejoramos continuamente. No dormimos sobre los laureles: cada resultado es el punto de partida del siguiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRABAJOS -->
+    <section id="trabajos" class="seccion bg-alt">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="eyebrow" data-i18n="works_eyebrow">Portafolio</p>
+                <h2 data-i18n="works_title">Proyectos que hablan por sí solos</h2>
+            </div>
+            <div class="works-filter reveal-up">
+                <button class="wf-btn active" data-filter="all" data-i18n="wf_all">Todos</button>
+                <button class="wf-btn" data-filter="web" data-i18n="wf_web">Web</button>
+                <button class="wf-btn" data-filter="brand" data-i18n="wf_brand">Branding</button>
+                <button class="wf-btn" data-filter="marketing" data-i18n="wf_marketing">Marketing</button>
+            </div>
+            <div class="works-grid">
+                <div class="work-item reveal-up" data-delay="0" data-cat="web">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Proyecto Web">
+                    <div class="wi-overlay">
+                        <span class="wi-cat" data-i18n="wcat_web">Desarrollo Web</span>
+                        <h3 data-i18n="wt1">E-commerce de Moda</h3>
+                        <p data-i18n="wd1">+280% en conversiones · 6 semanas</p>
+                    </div>
+                </div>
+                <div class="work-item reveal-up" data-delay="1" data-cat="marketing">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Proyecto Marketing">
+                    <div class="wi-overlay">
+                        <span class="wi-cat" data-i18n="wcat_mkt">Marketing Digital</span>
+                        <h3 data-i18n="wt2">Campaña B2B SaaS</h3>
+                        <p data-i18n="wd2">+500 leads cualificados · 3 meses</p>
+                    </div>
+                </div>
+                <div class="work-item reveal-up" data-delay="2" data-cat="brand">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80" alt="Proyecto Branding">
+                    <div class="wi-overlay">
+                        <span class="wi-cat" data-i18n="wcat_brand">Branding</span>
+                        <h3 data-i18n="wt3">Rebrand Corporativo</h3>
+                        <p data-i18n="wd3">Identidad completa en 4 semanas</p>
+                    </div>
+                </div>
+                <div class="work-item reveal-up" data-delay="3" data-cat="web">
+                    <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=800&q=80" alt="Proyecto App">
+                    <div class="wi-overlay">
+                        <span class="wi-cat" data-i18n="wcat_web">Desarrollo Web</span>
+                        <h3 data-i18n="wt4">Plataforma SaaS</h3>
+                        <p data-i18n="wd4">Lanzamiento en tiempo récord</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section id="estadisticas" class="seccion stats-section">
+        <div class="stats-bg-text">DS</div>
+        <div class="container stats-grid">
+            <div class="stat-item reveal-up" data-delay="0">
+                <h3>+<span class="counter" data-target="150">0</span></h3>
+                <p data-i18n="stat1">Proyectos entregados</p>
+            </div>
+            <div class="stat-item reveal-up" data-delay="1">
+                <h3>+<span class="counter" data-target="5">0</span></h3>
+                <p data-i18n="stat2">Años de experiencia</p>
+            </div>
+            <div class="stat-item reveal-up" data-delay="2">
+                <h3>+<span class="counter" data-target="300">0</span></h3>
+                <p data-i18n="stat3">Clientes satisfechos</p>
+            </div>
+            <div class="stat-item reveal-up" data-delay="3">
+                <h3><span class="counter" data-target="98">0</span>%</h3>
+                <p data-i18n="stat4">Tasa de retención</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="seccion">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <p class="eyebrow" data-i18n="test_eyebrow">Testimonios</p>
+                <h2 data-i18n="test_title">Lo que dicen quienes ya escalaron</h2>
+            </div>
+            <div class="testimonials-carousel reveal-up">
+                <div class="tc-track">
+                    <div class="tc-card">
+                        <div class="tc-stars">★★★★★</div>
+                        <p data-i18n="tc1_q">"Triplicamos nuestras ventas en 3 meses. El equipo de Digital Solution no solo ejecuta, piensa como socios de negocio."</p>
+                        <div class="tc-author">
+                            <div class="tc-avatar">CM</div>
+                            <div><strong data-i18n="tc1_name">Carlos M.</strong><span data-i18n="tc1_role">CEO, Startup Fintech</span></div>
+                        </div>
+                    </div>
+                    <div class="tc-card">
+                        <div class="tc-stars">★★★★★</div>
+                        <p data-i18n="tc2_q">"Nuestra nueva web redujo el bounce rate a la mitad y el tiempo en página se duplicó. Resultados increíbles."</p>
+                        <div class="tc-author">
+                            <div class="tc-avatar">SL</div>
+                            <div><strong data-i18n="tc2_name">Sara L.</strong><span data-i18n="tc2_role">CMO, E-commerce de Moda</span></div>
+                        </div>
+                    </div>
+                    <div class="tc-card">
+                        <div class="tc-stars">★★★★★</div>
+                        <p data-i18n="tc3_q">"Profesionalismo absoluto desde el primer contacto. Entregaron antes del plazo y por encima de las expectativas."</p>
+                        <div class="tc-author">
+                            <div class="tc-avatar">MR</div>
+                            <div><strong data-i18n="tc3_name">Marc R.</strong><span data-i18n="tc3_role">Founder, Agencia Inmobiliaria</span></div>
+                        </div>
+                    </div>
+                    <div class="tc-card">
+                        <div class="tc-stars">★★★★★</div>
+                        <p data-i18n="tc4_q">"La mejor inversión que hice para mi negocio. El ROI del primer mes cubrió el costo del proyecto entero."</p>
+                        <div class="tc-author">
+                            <div class="tc-avatar">AP</div>
+                            <div><strong data-i18n="tc4_name">Ana P.</strong><span data-i18n="tc4_role">Directora, Consultora B2B</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tc-dots">
+                    <span class="tc-dot active"></span>
+                    <span class="tc-dot"></span>
+                    <span class="tc-dot"></span>
+                    <span class="tc-dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="seccion bg-alt">
+        <div class="container faq-container">
+            <div class="section-header reveal-up">
+                <p class="eyebrow" data-i18n="faq_eyebrow">Preguntas frecuentes</p>
+                <h2 data-i18n="faq_title">Todo lo que necesitas saber</h2>
+            </div>
+            <div class="faq-list reveal-up">
+                <div class="faq-item">
+                    <button class="faq-q"><span data-i18n="faq1_q">¿Cuánto tiempo tarda un proyecto?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p data-i18n="faq1_a">Depende de la complejidad. Una landing page tarda 1-2 semanas. Un e-commerce o web corporativa completa entre 4-8 semanas. Un rebrand completo entre 3-5 semanas. Siempre pactamos plazos reales desde el inicio.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span data-i18n="faq2_q">¿Trabajan con clientes internacionales?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p data-i18n="faq2_a">Sí, trabajamos con clientes en España, Estados Unidos, Suiza y toda Latinoamérica. Nuestros procesos están adaptados para trabajar en remoto con total fluidez.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span data-i18n="faq3_q">¿Cuáles son los modelos de pago?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p data-i18n="faq3_a">Trabajamos con proyectos por tarifa fija y también con retainer mensual para servicios continuos. Aceptamos transferencia bancaria, tarjeta y PayPal.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span data-i18n="faq4_q">¿Ofrecen soporte post-lanzamiento?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p data-i18n="faq4_a">Todos nuestros proyectos incluyen 30 días de soporte gratuito post-entrega. Después ofrecemos planes de mantenimiento mensuales adaptados a tus necesidades.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span data-i18n="faq5_q">¿Cómo empezamos a trabajar juntos?</span><i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-a"><p data-i18n="faq5_a">Simple: rellena el formulario de contacto o escríbenos por WhatsApp. Agendamos una llamada de diagnóstico gratuita de 30 minutos y desde ahí construimos tu propuesta.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band reveal-up">
+        <div class="container cta-inner">
+            <div class="cta-text">
+                <h2 data-i18n="cta_title">¿Listo para escalar tu negocio?</h2>
+                <p data-i18n="cta_sub">Agenda una llamada gratuita de 30 minutos y cuéntanos tu proyecto.</p>
+            </div>
+            <a href="#contacto" class="btn-primary btn-lg" data-i18n="cta_btn">Agenda tu llamada</a>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion">
+        <div class="container contact-grid">
+            <div class="contact-info reveal-left">
+                <p class="eyebrow" data-i18n="contact_eyebrow">Contacto</p>
+                <h2 data-i18n="contact_title">Hablemos de tu proyecto</h2>
+                <p data-i18n="contact_sub">Respondemos en menos de 24h. Sin compromisos, sin presión.</p>
+                <div class="ci-items">
+                    <div class="ci-item"><i class="fa-solid fa-envelope"></i><span>hola@digitalsolution.com</span></div>
+                    <div class="ci-item"><i class="fa-brands fa-whatsapp"></i><span>+XX XXX XXX XXXX</span></div>
+                    <div class="ci-item"><i class="fa-solid fa-clock"></i><span data-i18n="contact_hours">Lun–Vie · 9:00–18:00 CET</span></div>
+                </div>
+            </div>
+            <form class="contact-form reveal-right" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="fname" required>
+                        <label for="fname" data-i18n="form_name">Nombre</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="femail" required>
+                        <label for="femail" data-i18n="form_email">Email</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="fcompany">
+                    <label for="fcompany" data-i18n="form_company">Empresa (opcional)</label>
+                </div>
+                <div class="form-group form-select-group">
+                    <select id="fservice" required>
+                        <option value="" disabled selected></option>
+                        <option value="web" data-i18n="fs_web">Desarrollo Web</option>
+                        <option value="mkt" data-i18n="fs_mkt">Marketing Digital</option>
+                        <option value="brand" data-i18n="fs_brand">Branding</option>
+                        <option value="social" data-i18n="fs_social">Social Media</option>
+                        <option value="other" data-i18n="fs_other">Otro</option>
+                    </select>
+                    <label for="fservice" data-i18n="form_service">Servicio que te interesa</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="fmsg" rows="4" required></textarea>
+                    <label for="fmsg" data-i18n="form_msg">Cuéntanos tu proyecto</label>
+                </div>
+                <button type="submit" class="btn-primary btn-full" data-i18n="form_send">Enviar mensaje</button>
+                <p class="form-note" data-i18n="form_note">Respondemos en menos de 24 horas hábiles.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#inicio" class="nav-logo">Digital<span>Solution</span></a>
+                <p data-i18n="footer_tagline">Transformamos marcas en experiencias digitales que generan resultados reales.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_services">Servicios</h4>
+                <ul>
+                    <li><a href="#servicios" data-i18n="s1_title">Desarrollo Web</a></li>
+                    <li><a href="#servicios" data-i18n="s2_title">Marketing Digital</a></li>
+                    <li><a href="#servicios" data-i18n="s3_title">Branding & Diseño</a></li>
+                    <li><a href="#servicios" data-i18n="s4_title">Analytics & CRO</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_company">Empresa</h4>
+                <ul>
+                    <li><a href="#quienes-somos" data-i18n="nav_about">Quiénes Somos</a></li>
+                    <li><a href="#proceso" data-i18n="nav_process">Proceso</a></li>
+                    <li><a href="#trabajos" data-i18n="nav_works">Trabajos</a></li>
+                    <li><a href="#testimonios" data-i18n="nav_testimonials">Testimonios</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_contact">Contacto</h4>
+                <ul>
+                    <li><a href="mailto:hola@digitalsolution.com">hola@digitalsolution.com</a></li>
+                    <li><a href="#contacto" data-i18n="footer_schedule">Agendar llamada</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Digital Solution. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+            <div class="footer-bottom-links">
+                <a href="#" data-i18n="footer_privacy">Privacidad</a>
+                <a href="#" data-i18n="footer_terms">Términos</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
