@@ -13,6 +13,7 @@
 </head>
 <body>
 
+    <!-- ── PRELOADER ── -->
     <div id="preloader">
         <div class="pre-inner">
             <div class="pre-logo">NP</div>
@@ -21,9 +22,11 @@
         </div>
     </div>
 
+    <!-- ── CURSOR ── -->
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
+    <!-- ── NAVBAR ── -->
     <nav id="navbar">
         <div class="nav-inner">
             <a href="#inicio" class="nav-logo">North<em>Peak</em></a>
@@ -46,6 +49,7 @@
         </div>
     </nav>
 
+    <!-- ── MOBILE MENU ── -->
     <div class="mobile-menu" id="mobileMenu">
         <ul>
             <li><a href="#nosotros" data-i18n="nav-about">Nosotros</a></li>
@@ -53,16 +57,20 @@
             <li><a href="#proceso" data-i18n="nav-process">Proceso</a></li>
             <li><a href="#proyectos" data-i18n="nav-projects">Proyectos</a></li>
             <li><a href="#testimonios" data-i18n="nav-testimonials">Testimonios</a></li>
-            <li><a href="#contacto" data-i18n="nav-cta">Hablemos</a></li>
+            <li><a href="#contacto" data-i18n="nav-cta"></a></li>
         </ul>   
     </div>
 
-    <a href="https://api.whatsapp.com/send?phone=TUDIGITOAQUI&text=Hola%2C%20quiero%20consultar%20sobre%20mis%20servicios%3A%20"
+    <!-- ── WHATSAPP ── -->
+    <a href="https://api.whatsapp.com/send?phone=TUNUMEROAQUI&text=Hola%2C%20quiero%20consultar%20sobre%20sus%20servicios%3A%20"
        class="wa-float" target="_blank" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
         <span class="wa-ping"></span>
     </a>
 
+    <!-- ════════════════════════════
+         HERO
+    ═════════════════════════════ -->
     <section id="inicio" class="hero">
         <canvas id="heroCanvas"></canvas>
         <div class="hero-overlay"></div>
@@ -108,13 +116,16 @@
         </div>
     </section>
 
+    <!-- ════════════════════════════
+         NOSOTROS
+    ═════════════════════════════ -->
     <section id="nosotros" class="section">
         <div class="container">
             <div class="about-grid">
                 <div class="about-left reveal-left">
                     <p class="eyebrow" data-i18n="about-eyebrow">Sobre North Peak</p>
                     <h2 data-i18n="about-h2">No somos una agencia más.<br>Somos tu equipo de crecimiento.</h2>
-                    <p data-i18n="about-p1">En North Peak no vendemos servicios sueltos. Construimos sistemas digitales completos: desde la primera impresión hasta el cliente que paga. Cada proyecto que tomamos lo trabajamos como si fuera nuestro propio negocio.</p>
+                    <p data-i18n="about-p1">En North Peak no vendemos servicios sueltos. Construimos sistemas digitales completos: desde la primera impresión hasta el cliente que paga. Cada proyecto que tomamos lo worked como si fuera nuestro propio negocio.</p>
                     <p data-i18n="about-p2">Trabajamos con marcas en Argentina, España, Estados Unidos y Suiza que quieren destacar de verdad en sus mercados.</p>
                     <a href="#contacto" class="btn-main mt-3" data-i18n="about-btn">Trabajemos juntos</a>
                 </div>
@@ -137,6 +148,9 @@
         </div>
     </section>
 
+    <!-- ════════════════════════════
+         SERVICIOS
+    ═════════════════════════════ -->
     <section id="servicios" class="section section-alt">
         <div class="container">
             <div class="section-hd reveal">
@@ -188,6 +202,9 @@
         </div>
     </section>
 
+    <!-- ════════════════════════════
+         PROCESO
+    ═════════════════════════════ -->
     <section id="proceso" class="section">
         <div class="container">
             <div class="section-hd reveal">
@@ -227,6 +244,9 @@
         </div>
     </section>
 
+    <!-- ════════════════════════════
+         PROYECTOS
+    ═════════════════════════════ -->
     <div id="proyectos" class="projects-outer">
         <div class="projects-sticky-wrap">
             <div class="projects-sticky">
@@ -301,6 +321,9 @@
         </div>
     </div>
 
+    <!-- ════════════════════════════
+         ESTADÍSTICAS
+    ═════════════════════════════ -->
     <section class="section stats-section">
         <div class="stats-bg-word">NP</div>
         <div class="container">
@@ -325,6 +348,9 @@
         </div>
     </section>
 
+    <!-- ════════════════════════════
+         TESTIMONIOS
+    ═════════════════════════════ -->
     <section id="testimonios" class="section section-alt">
         <div class="container">
             <div class="section-hd reveal">
@@ -373,6 +399,7 @@
         </div>
     </section>
 
+    <!-- ── FAQ ── -->
     <section id="faq" class="section">
         <div class="container">
             <div class="section-hd reveal">
@@ -404,6 +431,7 @@
         </div>
     </section>
 
+    <!-- ── CTA BAND ── -->
     <section class="cta-band reveal">
         <div class="container cta-inner">
             <div>
@@ -414,6 +442,7 @@
         </div>
     </section>
 
+    <!-- ── CONTACTO FORM ── -->
     <section id="contacto" class="section">
         <div class="container contact-grid">
             <div class="contact-info reveal-left">
@@ -463,6 +492,7 @@
         </div>
     </section>
 
+    <!-- ── FOOTER ── -->
     <footer>
         <div class="container footer-grid">
             <div class="footer-brand">
@@ -511,6 +541,7 @@
         </div>
     </footer>
 
+    <!-- ── BANNER DE COOKIES (GDPR) ── -->
     <div id="cookieNotice" class="cookie-notice hidden">
         <div class="cookie-content">
             <p data-i18n="cookie-text">Utilizamos cookies propias y de terceros para optimizar el rendimiento y analizar el tráfico de la web. Puedes aceptar todas o configurar tus preferencias en nuestra Política de Privacidad.</p>
