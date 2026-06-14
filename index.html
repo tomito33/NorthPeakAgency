@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Peak | Agencia de Crecimiento Digital</title>
     <meta name="description" content="North Peak — Creamos páginas web, embudos de ventas y sistemas de captación de clientes que hacen crecer tu marca online.">
+    
+    <link rel="icon" type="image/png" href="img/Logo.jpeg">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,21 +25,25 @@
         </div>
     </div>
 
-    <!-- ── CURSOR ── -->
+    <!-- ── CURSOR INTERACTIVO ── -->
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
     <!-- ── NAVBAR ── -->
     <nav id="navbar">
         <div class="nav-inner">
-            <a href="#inicio" class="nav-logo">North<em>Peak</em></a>
+            <a href="#inicio" class="nav-logo">
+                <img src="" alt="North Peak Logo" class="logo-img" onerror="this.style.display='none'">
+                <span class="logo-text">North<em>Peak</em></span>
+            </a>
+            
             <ul class="nav-links" id="navLinks">
                 <li><a href="#nosotros" data-i18n="nav-about">Nosotros</a></li>
                 <li><a href="#servicios" data-i18n="nav-services">Servicios</a></li>
                 <li><a href="#proceso" data-i18n="nav-process">Proceso</a></li>
                 <li><a href="#proyectos" data-i18n="nav-projects">Proyectos</a></li>
                 <li><a href="#testimonios" data-i18n="nav-testimonials">Testimonios</a></li>
-                <li><a href="#contacto" class="nav-cta" data-i18n="nav-cta">Hablemos</a></li>
+                <li><a href="#contacto" class="nav-cta" data-i18n="nav-cta">Contactanos</a></li>
             </ul>
             <div class="lang-switch">
                 <button class="lang-btn active" data-lang="es">ES</button>
@@ -62,14 +69,14 @@
     </div>
 
     <!-- ── WHATSAPP ── -->
-    <a href="https://api.whatsapp.com/send?phone=TUNUMEROAQUI&text=Hola%2C%20quiero%20consultar%20sobre%20sus%20servicios%3A%20"
-       class="wa-float" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/5492644056518?text=Hola%2C%20quiero%20consultar%20sobre%20sus%20servicios"
+    class="wa-float" target="_blank" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
         <span class="wa-ping"></span>
     </a>
 
     <!-- ════════════════════════════
-         HERO
+        HERO
     ═════════════════════════════ -->
     <section id="inicio" class="hero">
         <canvas id="heroCanvas"></canvas>
@@ -125,7 +132,7 @@
                 <div class="about-left reveal-left">
                     <p class="eyebrow" data-i18n="about-eyebrow">Sobre North Peak</p>
                     <h2 data-i18n="about-h2">No somos una agencia más.<br>Somos tu equipo de crecimiento.</h2>
-                    <p data-i18n="about-p1">En North Peak no vendemos servicios sueltos. Construimos sistemas digitales completos: desde la primera impresión hasta el cliente que paga. Cada proyecto que tomamos lo worked como si fuera nuestro propio negocio.</p>
+                    <p data-i18n="about-p1">En North Peak no vendemos servicios sueltos. Construimos sistemas digitales completos: desde la primera impresión hasta el cliente que paga. Cada proyecto que tomamos lo trabajamos como si fuera nuestro propio negocio.</p>
                     <p data-i18n="about-p2">Trabajamos con marcas en Argentina, España, Estados Unidos y Suiza que quieren destacar de verdad en sus mercados.</p>
                     <a href="#contacto" class="btn-main mt-3" data-i18n="about-btn">Trabajemos juntos</a>
                 </div>
@@ -421,11 +428,11 @@
                 </div>
                 <div class="faq-item">
                     <button class="faq-q"><span data-i18n="faq-4-q">¿Ofrecen soporte después del lanzamiento?</span><i class="fa-solid fa-plus"></i></button>
-                    <div class="faq-a"><p data-i18n="faq-4-a">Todos los proyectos incluyen 30 días de soporte gratuito post-entrega. Después ofrecemos planes de mantenimiento mensuales adaptados a cada cliente.</p></div>
+                    <div class="faq-a"><p data-i18n="faq-4-a">Todos los proyectos incluyen 15 días de soporte gratuito post-entrega. Después ofrecemos planes de mantenimiento mensuales adaptados a cada cliente.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-q"><span data-i18n="faq-5-q">¿Cómo empezamos a trabajar juntos?</span><i class="fa-solid fa-plus"></i></button>
-                    <div class="faq-a"><p data-i18n="faq-5-a">Escribinos por el formulario o por WhatsApp. Agendamos una llamada gratuita de 30 minutos, entendemos tu negocio y desde ahí armamos una propuesta personalizada.</p></div>
+                    <div class="faq-a"><p data-i18n="faq-5-a">Escribinos por el formulario o por WhatsApp. Agendamos una llamada gratuita de 15 minutos, entendemos tu negocio y desde ahí armamos una propuesta personalizada.</p></div>
                 </div>
             </div>
         </div>
@@ -451,28 +458,36 @@
                 <p data-i18n="contact-p">Respondemos en menos de 24h. Sin compromisos, sin presión.</p>
                 <div class="ci-list">
                     <div class="ci-row"><i class="fa-solid fa-envelope"></i><span>hola@northpeakagency.online</span></div>
-                    <div class="ci-row"><i class="fab fa-whatsapp"></i><span>+XX XXX XXX XXXX</span></div>
+                    <div class="ci-row"><i class="fab fa-whatsapp"></i><span>+54 9 264 405 6518</span></div>
                     <div class="ci-row"><i class="fa-solid fa-clock"></i><span data-i18n="contact-hours">Lun–Vie · 9:00–18:00</span></div>
                 </div>
             </div>
             <form class="contact-form reveal-right" id="contactForm">
                 <div class="form-row">
                     <div class="fg">
-                        <input type="text" id="fname" placeholder=" " maxlength="60" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$" required>
+                        <input type="text" id="fname" name="Nombre" placeholder=" " maxlength="60" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$" required>
                         <label for="fname" data-i18n="form-name">Nombre</label>
                     </div>
                     <div class="fg">
-                        <input type="email" id="femail" placeholder=" " maxlength="100" required>
+                        <input type="email" id="femail" name="Email" placeholder=" " maxlength="100" required>
                         <label for="femail" data-i18n="form-email">Email</label>
                     </div>
                 </div>
-                <div class="fg">
-                    <input type="text" id="fcompany" placeholder=" " maxlength="80">
-                    <label for="fcompany" data-i18n="form-company">Empresa (opcional)</label>
+                
+                <div class="form-row">
+                    <div class="fg">
+                        <input type="text" id="fcompany" name="Empresa" placeholder=" " maxlength="80">
+                        <label for="fcompany" data-i18n="form-company">Empresa (opcional)</label>
+                    </div>
+                    <div class="fg">
+                        <input type="tel" id="fphone" name="Teléfono" placeholder=" " maxlength="20">
+                        <label for="fphone" data-i18n="form-phone">Teléfono (opcional)</label>
+                    </div>
                 </div>
+
                 <div class="fg fg-sel">
                     <label data-i18n="form-service">Servicio que te interesa</label>
-                    <select id="fservice" required>
+                    <select id="fservice" name="Servicio Solicitado" required>
                         <option value="" disabled selected></option>
                         <option>Desarrollo Web</option>
                         <option>Embudo de Ventas</option>
@@ -483,7 +498,7 @@
                     </select>
                 </div>
                 <div class="fg">
-                    <textarea id="fmsg" rows="4" placeholder=" " maxlength="1500" required></textarea>
+                    <textarea id="fmsg" name="Mensaje" rows="4" placeholder=" " maxlength="1500" required></textarea>
                     <label for="fmsg" data-i18n="form-msg">Contanos tu proyecto</label>
                 </div>
                 <button type="submit" class="btn-main btn-full" id="submitBtn" data-i18n="form-btn">Enviar mensaje</button>
@@ -526,7 +541,7 @@
             <div class="footer-col">
                 <h4 data-i18n="contact-eyebrow">Contacto</h4>
                 <ul>
-                    <li><a href="mailto:hola@northpeakagency.online">hola@northpeakagency.online</a></li>
+                    <li><a href="mailto:northpeakagency.ok@gmail.com">northpeakagency.ok@gmail.com</a></li>
                     <li><a href="#contacto" data-i18n="cta-band-btn">Agendar llamada</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
@@ -535,13 +550,14 @@
         <div class="footer-bottom">
             <p>© 2026 North Peak. Todos los derechos reservados.</p>
             <div class="footer-links">
-                <a href="#politica-privacidad" data-i18n="footer-privacy">Privacidad</a>
-                <a href="#" data-i18n="footer-terms">Términos</a>
+                <!-- Enlaces corregidos y protegidos de la sobreescritura del JS -->
+                <a href="privacidad.html"><span data-i18n="footer-privacy">Privacidad</span></a>
+                <a href="terminos.html"><span data-i18n="footer-terms">Términos</span></a>
             </div>
         </div>
     </footer>
 
-    <!-- ── BANNER DE COOKIES (GDPR) ── -->
+    <!-- ── BANNER DE COOKIES ── -->
     <div id="cookieNotice" class="cookie-notice hidden">
         <div class="cookie-content">
             <p data-i18n="cookie-text">Utilizamos cookies propias y de terceros para optimizar el rendimiento y analizar el tráfico de la web. Puedes aceptar todas o configurar tus preferencias en nuestra Política de Privacidad.</p>
